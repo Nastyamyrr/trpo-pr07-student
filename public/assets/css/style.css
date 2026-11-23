@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+:root { --ink:#202938; --muted:#6b7280; --blue:#315efb; --line:#e1e5ec; --bg:#f4f6fb; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:Arial,Helvetica,sans-serif; line-height:1.6; }
+header { background:#111827; color:#fff; }
+.header-inner { max-width:1160px; margin:auto; padding:18px 24px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.brand { color:#fff; text-decoration:none; font-size:22px; font-weight:800; letter-spacing:.2px; }
+nav { display:flex; gap:22px; flex-wrap:wrap; }
+nav a { color:#d1d5db; text-decoration:none; }
+nav a:hover, nav a.active { color:#fff; }
+main { max-width:1160px; margin:34px auto 60px; padding:0 24px; }
+.hero, .panel, .card { background:#fff; border:1px solid var(--line); border-radius:18px; }
+.hero { padding:32px; display:grid; grid-template-columns:1fr 230px; align-items:center; gap:24px; }
+.eyebrow, .pill { display:inline-block; color:var(--blue); background:#e9efff; border-radius:999px; padding:5px 12px; font-size:14px; }
+h1 { font-size:30px; line-height:1.25; margin:18px 0 10px; }
+h2 { font-size:25px; margin:0 0 12px; }
+h3 { margin:0 0 8px; font-size:20px; }
+.muted { color:var(--muted); }
+.hero-logo { width:100%; max-width:220px; border-radius:14px; }
+.button { display:inline-block; background:var(--blue); color:#fff; text-decoration:none; padding:10px 17px; border-radius:10px; margin-top:10px; }
+.grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:22px; }
+.card { padding:22px; }
+.card p { margin:0; color:var(--muted); }
+.panel { padding:24px; margin-top:22px; }
+table { width:100%; border-collapse:collapse; }
+th, td { padding:13px 12px; border-bottom:1px solid var(--line); text-align:left; }
+th { font-weight:600; }
+.status { color:var(--blue); }
+.product-price { font-weight:700; white-space:nowrap; }
+.page-heading { margin-bottom:20px; }
+.page-heading p { color:var(--muted); margin:6px 0 0; }
+.empty { padding:28px; text-align:center; color:var(--muted); }
+footer { color:var(--muted); text-align:center; padding:24px; }
+@media (max-width:760px) {
+ .header-inner { align-items:flex-start; flex-direction:column; }
+ main { margin-top:20px; }
+ .hero { grid-template-columns:1fr; padding:24px; }
+ .hero-logo { max-width:160px; }
+ h1 { font-size:25px; }
+ .grid { grid-template-columns:1fr; }
+ .panel { overflow-x:auto; }
+}
