@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Local environment
+.env
+.env.*
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
